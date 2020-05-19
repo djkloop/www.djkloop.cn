@@ -1,20 +1,21 @@
-<%- partial('_partial/header', {
-    title: config.title,
-    hdClass: 'index-header'
-}) %>
-<div class="container body-wrap">
-
+<!--
+ * @Author       : djkloop
+ * @Date         : 2020-05-19 21:15:00
+ * @LastEditors  : djkloop
+ * @LastEditTime : 2020-05-19 23:52:48
+ * @Description  : 头部注释
+ * @FilePath     : /www.djkloop.cn/themes/indigo/layout/index.ejs
+-->
+<%- partial('_partial/header', { title: config.title, hdClass: 'index-header' })
+%>
+<div class="container body-wrap" id="index-body">
     <ul class="post-list">
-    <% page.posts.each(function(post){ %>
+        <% page.posts.each(function(post){ %>
         <li class="post-list-item fade">
-            <%- partial('_partial/index-item', {
-                post: post,
-                index: true
-            }) %>
+            <%- partial('_partial/index-item', { post: post, index: true }) %>
         </li>
-    <% }) %>
+        <% }) %>
     </ul>
 
     <%- partial('_partial/paginator') %>
-
 </div>
