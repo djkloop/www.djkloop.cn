@@ -5,17 +5,16 @@
     width: 100%;
     color: @textPrimaryColor;
     height: @headerH;
-    -webkit-transition: padding-left .6s ease-in-out, background-color .3s cubic-bezier(.4, 0, .2, 1), box-shadow .15s linear;
-    transition: padding-left .6s ease-in-out, background-color .3s cubic-bezier(.4, 0, .2, 1), box-shadow .15s linear;
+    transition: padding-left 0.6s ease-in-out,
+        background-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 0.15s linear;
     z-index: 30;
 
     &.fixed {
         .header-title {
             visibility: visible;
         }
-
     }
-
 }
 
 .header-icon {
@@ -45,14 +44,13 @@
     color: @textPrimaryColor;
     position: relative;
     background-color: @primaryColor;
-    background-image: url("https://wx1.sbimg.cn/2020/05/18/0da0ef40e40e4bfe98731a0c411cf276.jpg");
-    background-position:  center center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 
-    >div {
+    > div {
         &:first-of-type {
             height: 100%;
             width: 100%;
@@ -68,7 +66,7 @@
         height: 100%;
         min-height: 100%;
 
-        >div {
+        > div {
             &:first-of-type {
                 position: relative;
                 padding: 75px 16px 75px 306px;
@@ -76,7 +74,7 @@
                 min-height: 100%;
                 -ms-flex-align: start;
                 align-items: flex-start;
-                background-color: rgba(1,1,1,0.24);
+                background-color: rgba(1, 1, 1, 0.24);
             }
         }
     }
@@ -94,12 +92,11 @@
     .article-category-list-link {
         color: lighten(@accentColor, 10%);
     }
-
 }
 
 .post-header {
-
-    .title, .subtitle {
+    .title,
+    .subtitle {
         display: none;
     }
 }
@@ -107,18 +104,16 @@
 .categories-header {
     position: relative;
     z-index: 6;
-    padding-bottom: 0!important
+    padding-bottom: 0 !important;
 }
 
-@media screen and (max-width:1240px) {
-
+@media screen and (max-width: 1240px) {
     .header-title {
         text-align: left;
     }
-
 }
 
-@media screen and (max-width:760px) {
+@media screen and (max-width: 760px) {
     .content-header {
         margin: 0;
         min-height: auto;
@@ -131,9 +126,8 @@
 
         .subtitle {
             font-size: 14px;
-            line-height: 20px
+            line-height: 20px;
         }
-
     }
 
     .post-header {
@@ -143,5 +137,4 @@
             line-height: 1.5;
         }
     }
-
 }
