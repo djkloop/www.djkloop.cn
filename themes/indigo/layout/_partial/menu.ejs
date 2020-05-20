@@ -1,9 +1,17 @@
+<!--
+ * @Author        : djkloop
+ * @Date          : 2020-05-18 12:50:28
+ * @LastEditors   : djkloop
+ * @LastEditTime  : 2020-05-20 16:51:58
+ * @Description   : 头部注释
+ * @FilePath      : /djkloop.cn/themes/indigo/layout/_partial/menu.ejs
+-->
 <aside id="menu" <% if((is_post() || page.layout === 'page') && theme.hideMenu){ %>class="hide"<% } %> >
   <div class="inner flex-row-vertical">
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
     </a>
-    <div class="brand-wrap" style="background-image:url(<%- url_for(theme.brand) %>)">
+    <div class="brand-wrap" style="background-image:url('<%- url_for(theme.brand) %>')">
       <div class="brand">
         <a href="<%- url_for(theme.avatar_link) %>" class="avatar waves-effect waves-circle waves-light">
           <img src="<%- url_for(theme.avatar) %>">

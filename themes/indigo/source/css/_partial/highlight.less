@@ -35,7 +35,6 @@
             background: none;
             color: @h-foreground;
         }
-
     }
 
     .highlight {
@@ -74,9 +73,8 @@
             margin-bottom: 1em;
 
             a {
-                float: right
+                float: right;
             }
-
         }
 
         .gutter pre {
@@ -84,14 +82,13 @@
             text-align: right;
             padding-right: 20px;
         }
-
-
     }
 
     .gist {
         background: @h-background;
 
-        tr, td {
+        tr,
+        td {
             height: auto;
         }
 
@@ -104,7 +101,6 @@
                 padding: 0;
                 border: none;
             }
-
         }
         .gist-data {
             border: none;
@@ -113,13 +109,12 @@
                 .line-numbers();
                 background: none;
                 border: none;
-                padding: 0 20px 0 0
+                padding: 0 20px 0 0;
             }
 
             .line-data {
-                padding: 0 !important
+                padding: 0 !important;
             }
-
         }
 
         .gist-meta {
@@ -132,24 +127,20 @@
                 font-weight: normal;
 
                 &:hover {
-                    text-decoration: underline
+                    text-decoration: underline;
                 }
-
             }
-
         }
-
     }
-
 }
 
 pre {
     .comment {
-        color: @h-comment
+        color: @h-comment;
     }
 
     .tag {
-        color: @h-comment
+        color: @h-comment;
     }
 
     .variable,
@@ -166,7 +157,7 @@ pre {
     .css .class,
     .css .pseudo,
     .tag .name {
-        color: @h-red
+        color: @h-red;
     }
 
     .class,
@@ -176,7 +167,7 @@ pre {
     .literal,
     .params,
     .constant {
-        color: @h-orange
+        color: @h-orange;
     }
 
     .attribute,
@@ -184,7 +175,7 @@ pre {
     .ruby .class .title,
     .css .rules .attribute,
     .tag .attr {
-        color: @h-green
+        color: @h-green;
     }
 
     .string,
@@ -193,13 +184,13 @@ pre {
     .header,
     .ruby .symbol,
     .xml .cdata {
-        color: @h-blue
+        color: @h-blue;
     }
 
     .selector-tag,
     .css .hexcolor,
     .css .tag {
-        color: @h-aqua
+        color: @h-aqua;
     }
 
     .function,
@@ -210,16 +201,15 @@ pre {
     .perl .sub,
     .javascript .title,
     .coffeescript .title {
-        color: @h-blue
+        color: @h-blue;
     }
 
     .selector-id,
     .selector-class,
     .keyword,
     .javascript .function {
-        color: @h-purple
+        color: @h-purple;
     }
-
 }
 @media screen and(max-width:760px) {
     .post-content .highlight {
