@@ -1,8 +1,9 @@
 global:
   search_input_hint: "Zoeken"
+  archives: "Bestand"
 
 post:
-  continue_reading: "Lees verder..."
+  continue_reading: "Lees verder"
   last_updated: "Laatste update: "
 
 footer:

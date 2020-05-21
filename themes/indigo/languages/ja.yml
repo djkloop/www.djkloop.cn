@@ -1,8 +1,9 @@
 global:
   search_input_hint: "検索"
+  archives: "アーカイブ"
 
 post:
-  continue_reading: "続きを読む…"
+  continue_reading: "続きを読む"
   last_updated: "最終更新："
 
 footer:

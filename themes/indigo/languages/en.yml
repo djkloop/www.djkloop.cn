@@ -1,8 +1,9 @@
 global:
   search_input_hint: "Search"
+  archives: "Archives"
 
 post:
-  continue_reading: "Continue reading..."
+  continue_reading: "Continue reading"
   last_updated: "Last updated: "
 
 footer:

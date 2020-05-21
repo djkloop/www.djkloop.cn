@@ -7,15 +7,19 @@ categories:
 toc: false
 author: djkloop
 date: 2020-05-18 12:06:00
-updated: 2020-05-19 16:27:42
+updated: 2020-05-21 12:01:44
 img:
 ---
 
-Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+Welcome to [Hexo](https://hexo.io/)! This is your very first post. 
+
+Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 
 ## Quick Start
 
-### Create a new post
+<!-- more -->
+
+## Create a new post
 
 ``` bash
 $ hexo new "My New Post"
@@ -23,7 +27,7 @@ $ hexo new "My New Post"
 
 More info: [Writing](https://hexo.io/docs/writing.html)
 
-### Run server
+## Run server
 
 ``` bash
 $ hexo server
@@ -31,7 +35,7 @@ $ hexo server
 
 More info: [Server](https://hexo.io/docs/server.html)
 
-### Generate static files
+## Generate static files
 
 ``` bash
 $ hexo generate 你说的太对了...
@@ -39,7 +43,7 @@ $ hexo generate 你说的太对了...
 
 More info: [Generating](https://hexo.io/docs/generating.html)
 
-### Deploy to remote sites
+## Deploy to remote sites
 
 ``` bash
 $ hexo deploy

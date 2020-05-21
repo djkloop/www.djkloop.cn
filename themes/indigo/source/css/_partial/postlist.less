@@ -7,6 +7,7 @@
 .post-list-item {
     padding: 0 12px;
     margin-bottom: 30px;
+    position: relative;
 }
 
 .post-title {
@@ -131,12 +132,18 @@
 }
 
 .post-more {
+    position: absolute;
+    z-index: 3;
+    bottom: 80px;
+    right: 0;
+    transform: translate(-50%, 50%);
     display: inline-block;
-    padding: 0 6px;
+    padding: 6px;
     font-weight: 500;
     color: @primaryColor!important;
     border: none !important;
     border-radius: 3px;
+    transition: all 0.3s;
 
     &:hover,
     &:active {
@@ -150,12 +157,14 @@
 
     .inner {
         display: inline-block;
+        background: #fff;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.12);
     }
 
     a,
     span {
         display: inline-block;
-        line-height: 34px;
+        line-height: 28px;
         padding: 0 1em;
         margin: 0 2px;
         font-size: 14px;
@@ -169,13 +178,14 @@
         &:hover,
         &:active {
             color: @primaryColor;
-            background: @borderColor;
         }
     }
 
     .current {
         color: #fff;
-        background: @primaryColor;
+        line-height: 26px;
+        padding: 0 0.9em;
+        background: lighten(@primaryColor, 10%);
     }
 }
 
@@ -207,7 +217,7 @@
                 width: calc(960px / 2);
 
                 .article-card {
-                    height: 380px;
+                    height: 550px;
                     display: flex;
                     flex-direction: column;
 
