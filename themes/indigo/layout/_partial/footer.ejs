@@ -1,5 +1,13 @@
+<!--
+ * @Author       : djkloop
+ * @Date         : 2020-05-19 21:15:00
+ * @LastEditors  : djkloop
+ * @LastEditTime : 2020-05-24 12:34:16
+ * @Description  : 底部
+ * @FilePath     : /www.djkloop.cn/themes/indigo/layout/_partial/footer.ejs
+-->
 <footer class="footer">
-    <div class="top">
+    <!-- <div class="top">
         <%- partial('plugins/site-visit') %>
         <p>
             <% if ((config.feed) && (config.feed.path.length)) { %>
@@ -7,14 +15,28 @@
             <% } %>
             <span><%- __('footer.license') %></span>
         </p>
-    </div>
+    </div> -->
     <div class="bottom">
-        <p><span><%-config.author %> &copy; <%if (theme.since_year && theme.since_year < date(new Date(), 'YYYY')) {%><%- theme.since_year %> - <%}%><%- date(new Date(), 'YYYY') %></span>
+        <p>
+            <span
+                ><%-config.author %> &copy; <%if (theme.since_year &&
+                theme.since_year < date(new Date(), 'YYYY')) {%><%-
+                theme.since_year %> - <%}%><%- date(new Date(), 'YYYY') %></span
+            >
+            <i class="icon icon-heart-o conect" style="color: red;"></i>
             <span>
                 <% if(theme.ICP_license) {%>
-                <a href="http://www.miitbeian.gov.cn/" target="_blank"><%- theme.ICP_license %></a><br>
+                <a href="http://www.miitbeian.gov.cn/" target="_blank"
+                    ><%- theme.ICP_license %></a
+                ><br />
                 <% } %>
-                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+                <!-- Power by -->
+                <!-- <a href="http://hexo.io/" target="_blank">Hexo</a> Theme
+                <a
+                    href="https://github.com/yscoder/hexo-theme-indigo"
+                    target="_blank"
+                    >indigo</a
+                > -->
             </span>
         </p>
     </div>
