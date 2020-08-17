@@ -10,12 +10,13 @@ author: djkloop
 top: 'false'
 cover: 'false'
 date: 2020-08-17 11:14:40
-updated: 2020-08-17 23:54:55
+updated: 2020-08-18 00:03:12
 ---
 
 > 万丈高楼, HelloWorld起
 
-```golang
+```c
+
 package main
 
 import (
@@ -63,7 +64,8 @@ func main() {
 }
 ```
 
-```golang
+```c
+
 package main
 
 import (
@@ -98,7 +100,8 @@ func main() {
 }
 
 ```
-```golang
+```c
+
 package main
 
 import (
