@@ -10,7 +10,7 @@ author: djkloop
 top: 'false'
 cover: 'false'
 date: 2020-08-26 10:48:13
-updated: 2020-08-26 22:49:57
+updated: 2020-08-26 23:17:14
 ---
 
 > 万丈高楼, HelloWorld起
@@ -36,10 +36,4 @@ func main() {
 	time.Sleep(time.Millisecond)
 	fmt.Println(a)
 }
-```
-
-```go
-
-
-
 ```
