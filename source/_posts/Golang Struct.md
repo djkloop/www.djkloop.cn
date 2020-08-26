@@ -10,7 +10,7 @@ author: djkloop
 top: 'false'
 cover: 'false'
 date: 2020-08-18 12:04:37
-updated: 2020-08-18 00:27:21
+updated: 2020-08-22 15:26:04
 ---
 
 > 万丈高楼, HelloWorld起
@@ -20,55 +20,50 @@ package main
 
 import (
 	"fmt"
+
+	"go_reset/tree"
 )
 
-type treeNode struct {
-	value       int
-	left, right *treeNode
+type myTreeNode struct {
+	*tree.Node
 }
 
-func (node treeNode) print() {
-	fmt.Println(node.value)
-}
-
-func (node *treeNode) setValue(value int) {
-	node.value = value
-}
-
-func (node *treeNode) traverse() {
-	if node == nil {
+func (myNode *myTreeNode) postOrder() {
+	if myNode == nil || myNode.Node == nil {
 		return
 	}
-	node.left.traverse()
-	node.print()
-	node.right.traverse()
+
+	left := myTreeNode{myNode.Left}
+	left.postOrder()
+
+	right := myTreeNode{myNode.Right}
+	right.postOrder()
+
+	myNode.Print()
 }
 
-func createNode(value int) *treeNode {
-	return &treeNode{value: value}
+func (myNode *myTreeNode) Traverse() {
+	fmt.Println("This method ois shadowed.")
 }
 
 func main() {
-	var root treeNode
-	fmt.Println(root)
+	root := myTreeNode{&tree.Node{Value: 3}}
 
-	root = treeNode{
-		value: 3,
+	root.Left = &tree.Node{
+		Value: 3,
 	}
 
-	root.left = &treeNode{
-		value: 3,
+	root.Right = &tree.Node{
+		Value: 5,
 	}
+	root.Right.Left = new(tree.Node)
+	root.Left.Right = tree.CreateNode(10)
+	root.Left.Right.SetValue(9)
 
-	root.right = &treeNode{
-		5, nil, nil,
-	}
-	root.right.left = new(treeNode)
-	root.left.right = createNode(10)
-	root.left.right.setValue(9)
+	fmt.Print("In-order traversal: ")
+	root.Traverse()
 
-	root.traverse()
+	fmt.Print("My own post-order traversal: ")
+	root.postOrder()
 }
-
-
 ```
